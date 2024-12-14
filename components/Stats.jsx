@@ -11,18 +11,18 @@ const stats = [
         sup: '+'
     },
     {
-        num: 26,
-        text: " + Projects completed",
+        num: 72,
+        text: " + Mothers Educated ",
         sup: '+'
     },
     {
-        num: 8,
-        text: "+ Technologies mastered",
+        num: 7,
+        text: "+ Technologies experienced",
         sup: '+'
     },
     {
-        num: 500,
-        text: " + Clients safe attended",
+        num: 100,
+        text: " + Safe deliveries across ",
         sup: '+'
     },
 ]
@@ -32,13 +32,13 @@ const Stats = () => {
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0 ">
         <div className="container mx-auto">
             <div 
-                className="flex flex-wrap gap-6 max-w-[80vw] xl:max-w-none lg:mb-10"
+                className="flex flex-wrap flex-1 gap-6 max-w-[80vw] xl:max-w-none lg:mb-10"
             >
 
                 {stats.map((item, index) => (
 
                     <div 
-                        key={index} className="flex-1 flex gap-4 items-center xl:justify-start shadow-xl border-spacing-1 border-neutral-400 p-5 rounded-2xl"
+                        key={index} className="flex-1  flex gap-4 items-center xl:justify-start shadow-xl border-spacing-1 border-neutral-400 p-5 rounded-2xl"
                     >
                         <CountUp end={item.num} duration={5} delay={2} className="text-4xl xl:text-6xl font-extrabold"/>
                         <p className={`${item.text.length < 15 ? "max-w-[100px]": "max-w-[150px]"} leading-snug text-white/80`}>{item.text} </p>

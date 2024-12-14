@@ -8,7 +8,7 @@ const Footer = () => {
         </div>
 
         <div className="text-md font-mono hover:text-white/60 transition-color cursor-pointer">
-        🎖️ Dr. Estella Fosua
+        🎖️ Dr. Estella Fosua - Powered
         </div>
     </div>
   )

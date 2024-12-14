@@ -140,15 +140,17 @@ const Draw = () => {
                 className='-z-10'
               />
             </DrawerTitle>
-            <DrawerDescription className="flex flex-col gap-8 lg:w-3/5 w-fu;; mx-auto items-center ">
-              <span className='font-semibold font-mono text-3xl lg:mt-20 mt-7 bg-transparent rounded-md backdrop-blur-sm'> {selectedContent?.title} </span>
-              <p> {selectedContent?.description} </p>
-              </DrawerDescription>
+            <DrawerDescription className="flex flex-col gap-8 lg:w-3/5 w-fu;; mx-auto items-center">
+              <span className='font-semibold font-mono text-3xl lg:mt-20 mt-7 bg-transparent rounded-md backdrop-blur-sm'>
+                {selectedContent?.title}
+              </span>
+            </DrawerDescription>
           </DrawerHeader>
           <DrawerFooter>
             
             <DrawerClose>
-              <Button variant="outline" onClick={() => setDrawerOpen(false)}>Cancel</Button>
+              <span variant="outline" onClick={() => setDrawerOpen(false)}>Cancel</span>
+              <div className='text-black' >{selectedContent?.description}</div>
             </DrawerClose>
           </DrawerFooter>
         </DrawerContent>

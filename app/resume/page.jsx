@@ -14,11 +14,11 @@ import innovate from "@/public/assets/images/innovate.svg"
 const about = {
   
     title: 'My Profile',
-    description: 'I am a dedicated and versatile Midwifery Officer with a nack for creating robust health and work environment.- Proficient in the use of modern obstetric machinery and technologies. Excellent patient care and interpersonal skills. Strong organizational and multitasking abilities. Expertise in electronic health records (EHR) systems .Knowledge of telehealth platforms and remote patient monitoring',
+    description: 'A Midwifery Officer proficient in the use of modern obstetric machinery and technologies, experienced in patient care and interpersonal skills. Strong organizational and multitasking abilities. Expertise in electronic health records (EHR) systems .Knowledge of telehealth platforms and remote patient monitoring. Quality health services for all...',
     info: [
       {
         fieldName: 'Name',
-        fieldValue: 'Fosua Estella',
+        fieldValue: 'Fosua Estella Amoakohene',
       },
       {
         fieldName: 'Nationality',
@@ -34,7 +34,7 @@ const about = {
       },
       {
         fieldName: 'Email',
-        fieldValue: 'fosuaEstella123@gmail.com',
+        fieldValue: 'amoakoheneestella91@gmail.com',
       },
     ]
   
@@ -44,7 +44,7 @@ const about = {
 const education = {
   icon: '../public/assets/images/womanFilm.png',
   title: 'My Education',
-  description: 'A young, energetic and versatile midwifery officer with a nack for creating robust health and work environment with both intensive, extensive and dynamic formal education utilizing other different technologies, for better performance.',
+  description: 'A young, energetic and versatile midwifery officer with a nack for creating robust health and work environment, both intensive and extensive, and dynamic blend of formal education, utilizing different modernized health technologies, for better healthcare experience.',
   items: [
     {
       company: 'Ghana Midwives Association',
@@ -57,12 +57,12 @@ const education = {
       duration: '2020'
     },
     {
-      company: "KATH",
+      company: "Juaso District Hospital",
       position: "Advanced Life Support in Obstetrics (ALSO)",
       duration: "2021",
     },
     {
-      company: "KATH",
+      company: "Agogo Presbyterian Hospital",
       position: "Electronic Fetal Monitoring Certification ",
       duration: "2024",
     },
@@ -73,25 +73,25 @@ const education = {
 const experience = {
   icon: '../public/assets/images/womanFilm.png',
   title: 'My Experience',
-  description: 'I am a dedicated and versatile health assistant with a nack for creating robust health and work environment with over a decade of experience with different technologies.',
+  description: 'I am a dedicated and versatile health assistant with a nack for creating robust health and work environment with experience with different technologies.',
   items: [
     {
-      company: 'Korle-Bu Teaching Hospital',
+      company: 'Agogo Presbyterian Hospital',
       position: 'Workshop on Advanced Obstetric Ultrasound',
-      duration: '2024 - Present'
+      duration: '2024'
     },
     {
-      company: "KATH",
+      company: "Konongo Government Hospital",
       position: "Seminar on Digital Innovations in Maternal Health",
       duration: "2023",
     },
     {
-      company: 'Hope Exchange Hospital',
+      company: 'Agogo Presbyterian Hospital',
       position: 'Training on Electronic Medication Administration',
-      duration: ''
+      duration: '2023'
     },
     {
-      company: 'KATH',
+      company: 'Agogo Presbyterian Hospital',
       position: 'Knowledge of telehealth platforms and remote patient monitoring',
       duration: '2024'
     },
@@ -100,46 +100,81 @@ const experience = {
 
 const skills = {
   title: 'My Skills',
-  description: 'Assisted in over 500 successful deliveries, employing state-of-the-art equipment for fetal monitoring and maternal care. Implemented evidence-based practices using advanced technological tools to enhance patient outcomes. Participated in the introduction and integration of new medical devices, ensuring smooth transitions and staff competency.',
+  description: 'Assisted in over 500 successful deliveries, employing state-of-the-art equipment for fetal monitoring and maternal care. Implemented evidence-based practices using advanced technological tools to enhance patient outcomes. Participated in the introduction and integration of new medical devices, ensuring smooth transitions and staff competency. Leveraging these other technologies',
   skillsList: [
     {
-      icon: 
-        <IconImage>
-         <Image 
-            src={innovate} 
-            priority
-            alt="lady Photo"
-            quality={100}
-            fill
-            className="object-contain lg:mt-20"
-          />
-
-          <p>This is the the text</p>
-        </IconImage>,
-      name: 'Health'
+      icon: (
+        <Image 
+          src={innovate} 
+          priority
+          alt="Innovate icon"
+          className="rounded-full"
+          width={80}
+          height={80}
+          objectFit="contain"
+        />
+      ),
+      name: 'Electronic Health Records (EHRs)'
     },
     {
-      icon: <BedDoubleIcon size={47}/>,
-      name: 'Bed Setups',
+      icon: (
+        <Image 
+          src={evaluate} 
+          priority
+          alt="Evaluate icon"
+          className="rounded-full"
+          width={80}
+          height={80}
+          objectFit="contain"
+        />
+      ),
+      name: 'Remote Patient Monitoring (RPM)'
     },
     {
-      icon: <BedDoubleIcon size={47}/>,
-      name: 'Bed Setups',
+      icon: (
+        <Image 
+          src={learn} 
+          priority
+          alt="Learn icon"
+          className="rounded-full"
+          width={80}
+          height={80}
+          objectFit="contain"
+        />
+      ),
+      name: 'Telehealth and Virtual Consultations'
     },
     {
-      icon: <InboxIcon size={47}/>,
-      name: 'Health'
+      icon: (
+        <Image 
+          src={doctor} 
+          priority
+          alt="Doctor icon"
+          className="rounded-full"
+          width={80}
+          height={80}
+          objectFit="contain"
+        />
+      ),
+      name: 'Advanced Ultrasound and Fetal Monitoring Systems'
     },
     {
-      icon: <Heart size={47}/>,
-      name: 'Health'
-    },
-    {
-      icon: <Heart size={47}/>,
-      name: 'Health'
-    },
+      icon: (
+        <Image 
+          src={science} 
+          priority
+          alt="Science icon"
+          className="rounded-full"
+          width={80}
+          height={80}
+          objectFit="contain"
+        />
+      ),
+      name: 'Online Collaboration Tools'
+    }
   ]
-}
+};
+
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
@@ -238,92 +273,22 @@ const Resume = () => {
             </TabsContent>
 
             {/* Skills */}
-            <TabsContent value="skills" className="w-full ring-0 shadow-md rounded-2xl text-center lg:text-start">
+            <TabsContent value="skills" className="w-full text-center xl:text-start ring-0 rounded-2xl">
                 <div className="flex flex-col gap-[30px]">
-                  <div className='flex flex-col gap-6'>
+                  <h3 className='font-mono font-thin text-3xl'>{skills.title}</h3>
+                  <p className='max-w-[600px] mx-auto xl:mx-0'>{skills.description}</p>
 
-                    <h3 className='font-mono font-thin text-3xl'>{skills.title}</h3>
-                    <p className='max-w-[600px] mx-auto xl:mx-0'>{skills.description}</p>
-                  </div>
-
-                  {/* For the icons */}
-                  <ul className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:gap-[30px] gap-4 pb-8 px-2'>
-                    <li className='flex items-center justify-start hover:shadow-xl hover:transition-all p-3 rounded-2xl gap-4 w-full lg:flex-col lg:items-start bg-[#232329]'>
-                      <Image 
-                          src={innovate} 
-                          priority
-                          alt="lady Photo"
-                          quality={100}
-                          
-                          width={80}
-                          height={80}
-                          className="object-cover rounded-2xl shadow-xl "
-                      />
-
-                      <p className='text-start font-thin text-sm'>Electronic Health Records (EHRs)</p>
-                    </li>
-                    <li className='flex items-center justify-start hover:shadow-xl hover:transition-all p-3 rounded-2xl gap-4 w-full lg:flex-col lg:items-start bg-[#232329]'>
-                      <Image 
-                          src={evaluate} 
-                          priority
-                          alt="lady Photo"
-                          quality={100}
-                          
-                          width={80}
-                          height={80}
-                          className="object-cover rounded-2xl shadow-xl "
-                      />
-
-                      <p className='text-start font-thin text-sm'>Remote Patient Monitoring (RPM)</p>
-                    </li>
-                    <li className='flex items-center justify-start hover:shadow-xl hover:transition-all p-3 rounded-2xl gap-4 w-full lg:flex-col lg:items-start bg-[#232329]'>
-                      <Image 
-                          src={learn} 
-                          priority
-                          alt="lady Photo"
-                          quality={100}
-                          
-                          width={80}
-                          height={80}
-                          className="object-cover rounded-2xl shadow-xl "
-                      />
-
-                      <p className='text-start font-thin text-sm'>Telehealth and Virtual Consultations</p>
-                    </li>
-                    <li className='flex items-center justify-start hover:shadow-xl hover:transition-all p-3 rounded-2xl gap-4 w-full lg:flex-col lg:items-start bg-[#232329]'>
-                      <Image 
-                          src={doctor} 
-                          priority
-                          alt="lady Photo"
-                          quality={100}
-                          
-                          width={80}
-                          height={80}
-                          className="object-cover rounded-2xl shadow-xl "
-                      />
-
-                      <p className='text-start font-thin text-sm'>Advanced Ultrasound and Fetal Monitoring Systems</p>
-                    </li>
-                    <li className='flex items-center justify-start hover:shadow-xl hover:transition-all p-3 rounded-2xl gap-4 w-full lg:flex-col lg:items-start bg-[#232329]'>
-                      <Image 
-                          src={science} 
-                          priority
-                          alt="lady Photo"
-                          quality={100}
-                          
-                          width={80}
-                          height={80}
-                          className="object-cover rounded-2xl shadow-xl "
-                      />
-
-                      <p className='text-start font-thin text-sm'>Online Collaboration Tools
-                    
-                      </p>
-                    </li>
-                    
+                  <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:gap-[30px] gap-4 pb-8 px-2 place-content-center'>
+                    {skills.skillsList.map((skill, index) => (
+                      <li key={index} className='flex items-center justify-start gap-8 w-full lg:w-auto p-3 border rounded-2xl border-neutral-800 shadow-xl hover:shadow transition-all cursor-pointer flex-1'>
+                        {skill.icon}
+                        <p className='font-mono font-thin text-[1rem]'>{skill.name}</p>
+                      </li>
+                    ))}
                   </ul>
                 </div>
-            </TabsContent>
+              </TabsContent>
+
 
             {/* About Me */}
             <TabsContent value="About" className="w-full text-center xl:text-start ring-0 rounded-lg shadow-lg py-5 px-3">
@@ -331,8 +296,8 @@ const Resume = () => {
                 <h3 className='text-3xl font-thin font-mono'>{about.title}</h3>
                 <p className='max-w-[600px] mx-auto lg:mx-0'>{about.description}</p>
 
-                <ul className='grid grid-cols-1 lg:grid-cols-2 gap-y-6 max-w-[620px] mx-auto lg:mx-auto'>{about.info.map((item, index) => (
-                  <li key={index} className='flex items-center justify-center lg:justify-start gap-4'>
+                <ul className='grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-3 max-w-[900px] mx-auto lg:mx-auto'>{about.info.map((item, index) => (
+                  <li key={index} className='flex items-center py-1 rounded-xl shadow-md justify-center lg:justify-start gap-4'>
                     <span className='tracking-tighter'>{item.fieldName}</span>
                     <span className='font-thin font-mono text-white/60 text-[1.2rem]'>{item.fieldValue}</span>
                   </li>

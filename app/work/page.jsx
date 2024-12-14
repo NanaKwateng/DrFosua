@@ -89,13 +89,13 @@ const Work  = () => {
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* outline none */}
               <div 
-                className="text-5xl leading-none font-bold border-l-[2.3px] pl-2 border-accent"
+                className="text-5xl leading-none font-bold border-l-[2.3px] pl-2 border-blue-500"
               >
                 {project.num}
               </div>
 
               {/* project category */}
-              <h2 className="group-hover:text-green-500 cursor-pointer transition-colors">
+              <h2 className="group-hover:text-blue-500 cursor-pointer transition-colors">
                 {project.category}
               </h2>
 
