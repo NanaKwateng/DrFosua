@@ -17,7 +17,7 @@ export default function Home() {
 
               <span className="text-xl">Midwifery Officer - MO</span>
 
-              <h1>Hi there, <span className="relative block">I'm Dr. Fosua</span> </h1>
+              <h1>Hi there, <span className="relative block">I&apos;m Dr. Fosua</span> </h1>
 
               <p className="max-w-[500px] mb-9 ">
                 Experienced and dedicated Midwifery Officer with over four years in maternal and newborn care. Skilled in utilizing advanced medical technologies and machinery to enhance patient care and improve clinical outcomes.

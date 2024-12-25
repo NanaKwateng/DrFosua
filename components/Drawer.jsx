@@ -19,7 +19,7 @@ const Drawer = () => {
             <DialogHeader>
               <DialogTitle className="text-red-300">Sorry...</DialogTitle>
               <DialogDescription className="text-black">
-                This license is currently unavailable. Contact me and let's interact. Thank You.
+                This license is currently unavailable. Contact me and let&apos;s interact. Thank You.
               </DialogDescription>
             </DialogHeader>
           </DialogContent>
